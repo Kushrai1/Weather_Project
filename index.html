@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Weather App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<h1>🌤 Weather Dashboard</h1>
+
+<div class="search-box">
+<input type="text" id="locationInput" placeholder="Enter city name...">
+<button id="searchBtn">Search</button>
+</div>
+
+<button id="toggleTheme">🌙</button>
+
+</header>
+
+<div id="loader" class="loader hidden"></div>
+
+<div id="error" class="error"></div>
+
+<div class="weather-card hidden" id="weatherCard">
+
+<h2 id="city"></h2>
+
+<div class="weather-main">
+<img id="icon">
+<h1 id="temp"></h1>
+</div>
+
+<p id="condition"></p>
+
+<div class="weather-details">
+
+<div>💧 Humidity: <span id="humidity"></span></div>
+<div>🌬 Wind: <span id="wind"></span></div>
+<div>🤗 Feels Like: <span id="feels"></span></div>
+<div>☀ UV Index: <span id="uv"></span></div>
+<div>🕒 Local Time: <span id="time"></span></div>
+<div>🌫 Air Quality: <span id="aqi"></span></div>
+
+</div>
+
+</div>
+
+<div class="forecast" id="forecast"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
